@@ -1,3 +1,11 @@
+:root {
+  --primary-color: #ccccff;
+  --secondary-color: #34373c;
+  --tertiary-color: #506491;
+  --quartiary-color: #677ec2;
+  --quintiary-color: #fafafa;
+}
+
 .App {
   text-align: center;
 }
@@ -14,18 +22,18 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: var(--secondary-color);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: var(--quintiary-color);
 }
 
 .App-link {
-  color: #61dafb;
+  color: var(--quartiary-color);
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +43,14 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.about {
+  background: var(--primary-color);
+  color: var(--secondary-color)
+}
+
+.footer {
+  background: var(--quintiary-color);
+  color: var(--secondary-color);
 }
