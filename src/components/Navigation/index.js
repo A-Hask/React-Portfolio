@@ -1,4 +1,5 @@
 import React from "react";
+import About from "../About";
 
 function Navigation(props) {
   const { pages = [], setCurrentPage, currentPage } = props;
@@ -6,7 +7,7 @@ function Navigation(props) {
     <div>
       <ul className="nav-list">
         <li>
-          <a href="/about">
+          <a href="/about" onClick={() => setCurrentPage(true)}>
             <button className="btn">About Me!</button>
           </a>
         </li>
